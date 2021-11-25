@@ -1,0 +1,90 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637662400134' stop='1637662409569'>
+    <name>As user validate header on home page: Scenario Outline name : As a user I can see Header on homepage</name>
+    <title>As user validate header on home page: Scenario Outline name : As a user I can see Header on homepage</title>
+    <test-cases>
+        <test-case start='1637662400135' status='passed' stop='1637662400137'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.45'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637662400137' status='passed' stop='1637662409515'>
+            <name>Given As user I will able to launch https://the-internet.herokuapp.com/ of application</name>
+            <title>Given As user I will able to launch https://the-internet.herokuapp.com/ of application</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.45'/>
+            </parameters>
+            <steps>
+                <step start='1637662400140' status='passed' stop='1637662409514'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='eb3fd4e7-f9d6-4703-ae6a-fef36708e334-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1637662409515' status='passed' stop='1637662409568'>
+            <name>Then as user I validate Welcome to the-internet on homePage</name>
+            <title>Then as user I validate Welcome to the-internet on homePage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.45'/>
+            </parameters>
+            <steps>
+                <step start='1637662409518' status='passed' stop='1637662409540'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='81c19aa6-e5ef-410c-bc92-93097f5ff240-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='705c2bfb-69ae-40f0-9a82-18b6081ea2db-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1637662409547' status='passed' stop='1637662409562'>
+                    <name>GET /session/:sessionId/element/19de1b3d-207d-4bcd-ab0c-b90438eac64f/text</name>
+                    <title>GET /session/:sessionId/element/19de1b3d-207d-4bcd-ab0c-b90438eac64f/text</title>
+                    <attachments>
+                        <attachment title='Response' source='c02172af-148f-47c1-8de7-a616ff072606-attachment.json' type='application/json' size='25'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1637662409568' status='passed' stop='1637662409568'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-96.0.4664.45'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
