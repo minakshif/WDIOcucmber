@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name='q']\"}\n  (Session info: chrome=96.0.4664.45)",
-  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00E16903+2517251]\n\tOrdinal0 [0x00DAF8E1+2095329]\n\tOrdinal0 [0x00CB2848+1058888]\n\tOrdinal0 [0x00CDD448+1233992]\n\tOrdinal0 [0x00CDD63B+1234491]\n\tOrdinal0 [0x00D07812+1406994]\n\tOrdinal0 [0x00CF650A+1336586]\n\tOrdinal0 [0x00D05BBF+1399743]\n\tOrdinal0 [0x00CF639B+1336219]\n\tOrdinal0 [0x00CD27A7+1189799]\n\tOrdinal0 [0x00CD3609+1193481]\n\tGetHandleVerifier [0x00FA5904+1577972]\n\tGetHandleVerifier [0x01050B97+2279047]\n\tGetHandleVerifier [0x00EA6D09+534521]\n\tGetHandleVerifier [0x00EA5DB9+530601]\n\tOrdinal0 [0x00DB4FF9+2117625]\n\tOrdinal0 [0x00DB98A8+2136232]\n\tOrdinal0 [0x00DB99E2+2136546]\n\tOrdinal0 [0x00DC3541+2176321]\n\tBaseThreadInitThunk [0x7591FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77937A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77937A6E+238]\n"
-}
