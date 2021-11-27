@@ -11,7 +11,7 @@ Feature: user able to register suceessfully
 
         Examples:
             | fname | lastname | gender | languages | mailid         | password |
-            | john  | smith    | Female | Hindi     | john@gamil.com | ad@345   |
+            | john  | smith    | female | Hindi     | john@gamil.com | ad@345   |
 
 
 

@@ -20,24 +20,16 @@ Then(/^click on Register button$/, async function () {
 
 When(/^Select (.+)$/, async function (gender: string) {
 
-  const gender_ele = await $$("//input[@name='gender']");
+  const genders = $$("//input[@name='gender']");
 
-  for (const genderValue of gender_ele) {
-    if (await genderValue.getText() === gender) {
-      await genderValue.click();
+  for (const genderElemenet of await genders) {
+    const actualGender = await genderElemenet.getAttribute("id");
+    if (actualGender.includes(gender)) {
+      await genderElemenet.click();
+      console.log("Gender selected: " + gender);
+      await browser.pause(2000);
       break;
     }
-  }
-
-  if (gender === 'male') {
-    const male_ele = $('#malerb');
-    await male_ele.click();
-    // await male_ele.saveScreenshot('ScreenShot/male.png')
-  }
-  else {
-    const female_ele = $('#femalerb');
-    await female_ele.click();
-    // await female_ele.saveScreenshot('ScreenShot/female.png')
   }
 
 });
