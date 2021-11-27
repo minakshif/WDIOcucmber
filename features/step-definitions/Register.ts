@@ -1,4 +1,6 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
+var assert=require("assert")
+
 
 Given(/^User launch register page \"([^\"]*)\" successfully$/, async function (registerURL) {
   await browser.url(registerURL);
@@ -12,6 +14,9 @@ When(/^user enter (.+) and (.+)$/, async function (fname, lastname) {
 
   await fname_ele.setValue(fname)
   await lastname_ele.setValue(lastname)
+  const firstname_var=await fname_ele.getValue();
+  console.log("first name"+firstname_var)
+  assert.strictEqual(firstname_var,"john")
 });
 
 Then(/^click on Register button$/, async function () {
@@ -24,21 +29,23 @@ When(/^Select (.+)$/, async function (gender: string) {
 
   for (const genderValue of gender_ele) {
     if (await genderValue.getText() === gender) {
+      
+      console.log("gender value",await genderValue.getText())
       await genderValue.click();
       break;
     }
   }
 
-  if (gender === 'male') {
-    const male_ele = $('#malerb');
-    await male_ele.click();
-    // await male_ele.saveScreenshot('ScreenShot/male.png')
-  }
-  else {
-    const female_ele = $('#femalerb');
-    await female_ele.click();
-    // await female_ele.saveScreenshot('ScreenShot/female.png')
-  }
+  // if (gender === 'male') {
+  //   const male_ele = $('#malerb');
+  //   await male_ele.click();
+  //   // await male_ele.saveScreenshot('ScreenShot/male.png')
+  // }
+  // else {
+  //   const female_ele = $('#femalerb');
+  //   await female_ele.click();
+  //   // await female_ele.saveScreenshot('ScreenShot/female.png')
+  // }
 
 });
 
